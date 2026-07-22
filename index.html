@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+</head>
+<body>
+    <h1>formulaire d'inscription</h1>
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom" placeholder="votre nom" required>
+    <br><br>
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" placeholder="votre email" required>
+    <br><br>
+    <label for="password">Mot de passe :</label>
+    <input type="password" id="password" name="password" placeholder="votre mot de passe" required>
+    <br><br>
+    <label for="age">Âge :</label>
+    <input type="number" id="age" name="age" placeholder="votre âge" required>
+    <br><br>
+    <label for="date">Date de naissance :</label>
+    <input type="date" id="date" name="date" placeholder="votre date de naissance" required>
+    <br><br>
+    <label for="color">Couleur préférée :</label>
+    <input type="color" id="color" name="color" placeholder="votre couleur préférée" required>
+    <br><br>
+    <label for="file">photo de profil :</label>
+    <input type="file" id="file" name="file" placeholder="choisissez un fichier" required>
+    <br><br>
+    <label for="genre">Genre :</label>
+    <select id="genre" name="genre" required>
+        <option value="">Sélectionnez votre genre</option>
+        <option value="homme">Homme</option>
+        <option value="femme">Femme</option>
+    </select>
+    <br><br>
+    <label for="centres d'intéret">Centres d'intéret :</label>
+    <select name="centres d'intéret" id="centres d'intéret">
+        <option value="">Sélectionnez vos centres d'intéret</option>
+        <option value="sport">Sport</option>
+        <option value="musique">Musique</option>
+    </select>
+    <br><br>
+    <label for="niveau d'étude">Niveau d'étude :</label>
+    <select name="niveau d'étude" id="niveau d'étude">
+        <option value="">Sélectionnez votre niveau d'étude</option>
+        <option value="lycée">Lycée</option>
+        <option value="licence">Licence</option>
+        <option value="master">Master</option>
+    </select>
+    <br><br>
+    <label for="message">pourquoi vous inscrire ?</label>
+    <textarea id="message" name="message" placeholder="votre message" required></textarea>
+    <br><br>
+    <input type="submit" value="S'inscrire">
+    <button type="reset">Annuler</button>
+    <h2>image</h2>
+    <img src="c:\Users\PC-HP\Desktop\Nouveau dossier\photo de profil.jpg" alt="image" width="200">
+    <figcaption>exemple de photo de profil</figcaption>
+    <h2>audio</h2>
+    <audio controls>
+        <source src="c:\Users\PC-HP\Desktop\Nouveau dossier\nature sound.mp3" type="audio/mpeg">
+        <h2>video MP4</h2>
+        <video width="400" height="300" controls>
+            <source src="c:\Users\PC-HP\Desktop\Nouveau dossier\mov_bbb.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la lecture vidéo.
+        </video>
+    </audio>
+<h2>liste des inscrits (exemple)</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Email</th>
+            <th>niveau</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>amina</td>
+            <td>amina@example.com</td>
+            <td>licence</td>
+        </tr>
+        <tr>
+            <td>yacine</td>
+            <td>yacine@example.com</td>
+            <td>master</td>
+        </tr>
+    </tbody>
+</table>
+
+        Votre navigateur ne supporte pas la lecture audio.
+</body>
+</html>
