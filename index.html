@@ -1,95 +1,133 @@
+<!--  Petit rappel important :** Le fichier principal de votre site doit obligatoirement s'appeler **`index.html`** et non **`text.html`** (ou tout autre nom).
+. -->
 <!DOCTYPE html>
+<!-- ✅ Très bien, le doctype est correctement déclaré. -->
+
 <html lang="en">
+<!-- ⚠ Le contenu est en français, il serait préférable d'utiliser lang="fr". -->
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulaire</title>
-</head>
-<body>
-    <h1>formulaire d'inscription</h1>
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" placeholder="votre nom" required>
-    <br><br>
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" placeholder="votre email" required>
-    <br><br>
-    <label for="password">Mot de passe :</label>
-    <input type="password" id="password" name="password" placeholder="votre mot de passe" required>
-    <br><br>
-    <label for="age">Âge :</label>
-    <input type="number" id="age" name="age" placeholder="votre âge" required>
-    <br><br>
-    <label for="date">Date de naissance :</label>
-    <input type="date" id="date" name="date" placeholder="votre date de naissance" required>
-    <br><br>
-    <label for="color">Couleur préférée :</label>
-    <input type="color" id="color" name="color" placeholder="votre couleur préférée" required>
-    <br><br>
-    <label for="file">photo de profil :</label>
-    <input type="file" id="file" name="file" placeholder="choisissez un fichier" required>
-    <br><br>
-    <label for="genre">Genre :</label>
-    <select id="genre" name="genre" required>
-        <option value="">Sélectionnez votre genre</option>
-        <option value="homme">Homme</option>
-        <option value="femme">Femme</option>
-    </select>
-    <br><br>
-    <label for="centres d'intéret">Centres d'intéret :</label>
-    <select name="centres d'intéret" id="centres d'intéret">
-        <option value="">Sélectionnez vos centres d'intéret</option>
-        <option value="sport">Sport</option>
-        <option value="musique">Musique</option>
-    </select>
-    <br><br>
-    <label for="niveau d'étude">Niveau d'étude :</label>
-    <select name="niveau d'étude" id="niveau d'étude">
-        <option value="">Sélectionnez votre niveau d'étude</option>
-        <option value="lycée">Lycée</option>
-        <option value="licence">Licence</option>
-        <option value="master">Master</option>
-    </select>
-    <br><br>
-    <label for="message">pourquoi vous inscrire ?</label>
-    <textarea id="message" name="message" placeholder="votre message" required></textarea>
-    <br><br>
-    <input type="submit" value="S'inscrire">
-    <button type="reset">Annuler</button>
-    <h2>image</h2>
-    <img src="c:\Users\PC-HP\Desktop\Nouveau dossier\photo de profil.jpg" alt="image" width="200">
-    <figcaption>exemple de photo de profil</figcaption>
-    <h2>audio</h2>
-    <audio controls>
-        <source src="c:\Users\PC-HP\Desktop\Nouveau dossier\nature sound.mp3" type="audio/mpeg">
-        <h2>video MP4</h2>
-        <video width="400" height="300" controls>
-            <source src="c:\Users\PC-HP\Desktop\Nouveau dossier\mov_bbb.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture vidéo.
-        </video>
-    </audio>
-<h2>liste des inscrits (exemple)</h2>
-<table border="1">
-    <thead>
-        <tr>
-            <th>Nom</th>
-            <th>Email</th>
-            <th>niveau</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>amina</td>
-            <td>amina@example.com</td>
-            <td>licence</td>
-        </tr>
-        <tr>
-            <td>yacine</td>
-            <td>yacine@example.com</td>
-            <td>master</td>
-        </tr>
-    </tbody>
-</table>
+    <!-- ✅ Encodage correct. -->
 
-        Votre navigateur ne supporte pas la lecture audio.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ✅ Compatible avec les appareils mobiles. -->
+
+    <title>css externe</title>
+    <!-- ⚠ Le titre est trop générique.
+         Un titre comme "Blog de Créativité" serait plus adapté. -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- ✅ Le fichier CSS est correctement lié. -->
+</head>
+
+<body>
+
+<header>
+
+    <div class="boite">
+
+        <!-- ✅ Le titre principal est bien présent dans un h1. -->
+
+        <h1>Blog de créativité</h1>
+
+    </div>
+
+</header>
+
+<main>
+<!-- ✅ Très bien d'utiliser la balise <main>. -->
+
+<div class="paragraphe">
+
+    <!-- ⚠ Le devoir demandait d'utiliser une balise <section> pour chaque article.
+         Ici un <div> est utilisé à la place. -->
+
+    <h2>Les secrets de la créativité</h2>
+
+    <div class="publie">
+
+        <p>Publié par : Claire Lemoine</p>
+
+        <p>Le : 28 juillet 2025</p>
+
+        <!-- ✅ Auteur et date présents. -->
+
+    </div>
+
+    <p>
+        <span class="underline">La créativité</span> n'est pas seulement une capacité innée, mais elle peut être développée.
+    </p>
+
+    <!-- ✅ Texte souligné correctement. -->
+
+    <p>
+        Les meilleures idées viennent souvent dans des moments de réflexion profonde.
+        <span class="barre">Le processus créatif peut être long et frustrant.</span>
+    </p>
+
+    <!-- ✅ Texte barré correctement. -->
+
+    <p>
+        Pour <span class="gras">stimuler votre créativité</span>, il est essentiel de sortir des sentiers battus et de s'inspirer des expériences quotidiennes.
+    </p>
+
+    <!-- ✅ Texte en gras correctement réalisé. -->
+
+</div>
+
+<div class="para2">
+
+    <!-- ⚠ Même remarque : cette partie devrait être une balise <section>. -->
+
+    <div class="tit">
+
+        <h2>Voyager pour s'inspirer</h2>
+
+    </div>
+
+    <div class="pub">
+
+        <p>Publié par : Antoine Durand</p>
+
+        <p>Le : 22 juillet 2025</p>
+
+    </div>
+
+    <p>
+        Le voyage est un excellent moyen de nourrir sa créativité.
+        <span class="les">Les destinations lointaines offrent une multitude d'idées.</span>
+    </p>
+
+    <!-- ✅ Texte barré correctement. -->
+
+    <p>
+        Explorer de nouvelles cultures permet de voir le monde sous un autre angle.
+        Voyager nous permet de prendre du recul sur nos habitudes quotidiennes.
+    </p>
+
+</div>
+
+</main>
+
+<footer>
+
+    <div class="footer">
+
+        <!-- ✅ Footer présent avec les informations de copyright. -->
+
+        <p>© 2025 Blog de créativité. Tous droits réservés.</p>
+
+        <p>ab._.informatique</p>
+
+        <!-- ⚠ Petite faute d'orthographe : "inormatique" → "informatique". -->
+
+    </div>
+⚠️
+
+
+</footer>
+
 </body>
 </html>
+
